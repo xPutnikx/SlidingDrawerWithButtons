@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:background="#9e9e9e">
+
+    <v.hudnitsky.demo.slider.widget.MultiDirectionSlidingDrawerWithButtons
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        xmlns:my="http://schemas.android.com/apk/res/v.hudnitsky.demo.slider"
+        android:id="@+id/drawer_right"
+        my:direction="rightToLeft"
+        my:handle="@+id/slider"
+        my:buttons="@+id/buttons"
+        my:content="@+id/body">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/slider"
+            android:focusable="false"
+            android:clickable="false">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/button4"
+                android:background="@drawable/sliding_drawer_handle_right" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/pattern1"
+            android:id="@+id/buttons"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="0dp"
+            android:focusable="false">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:focusable="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button2"
+                android:focusable="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button3"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:background="#9e9e9e"
+            android:id="@+id/body"
+            android:layout_toRightOf="@+id/all_buttons"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true">
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/pen_content" />
+        </RelativeLayout>
+
+    </v.hudnitsky.demo.slider.widget.MultiDirectionSlidingDrawerWithButtons>
+<v.hudnitsky.demo.slider.widget.MultiDirectionSlidingDrawerWithButtons
+        android:layout_width="450dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        xmlns:my="http://schemas.android.com/apk/res/v.hudnitsky.demo.slider"
+        android:id="@+id/drawer_left"
+        my:direction="leftToRight"
+        my:handle="@+id/slider_left"
+        my:buttons="@+id/buttons_left"
+        my:content="@+id/body_left">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/slider_left"
+            android:focusable="false"
+            android:clickable="false">
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="120dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/button4_left"
+                android:background="@drawable/sliding_drawer_handle_left" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:background="@drawable/pattern1"
+            android:id="@+id/buttons_left"
+            android:layout_alignParentLeft="false"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="0dp"
+            android:focusable="false">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button_left"
+                android:focusable="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button2_left"
+                android:focusable="false"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button3_left"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:background="#9e9e9e"
+            android:id="@+id/body_left"
+            android:layout_toRightOf="@+id/all_buttons"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true">
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/pen_content" />
+        </RelativeLayout>
+
+    </v.hudnitsky.demo.slider.widget.MultiDirectionSlidingDrawerWithButtons>
+
+
+
+
+</RelativeLayout>
