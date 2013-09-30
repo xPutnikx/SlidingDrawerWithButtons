@@ -505,10 +505,10 @@ public class MultiDirectionSlidingDrawerWithButtons extends ViewGroup {
                                 performFling(vertical ? handleTop : handleLeft, velocity, false);
                             }
                         } else {
-                            performFling(vertical ? handleTop : handleLeft, velocity, false);
+                            performFling(vertical ? handleTop : handleLeft + mButtonsWidth, velocity, false);
                         }
                     } else {
-                        performFling(vertical ? handleTop : handleLeft, velocity, false);
+                        performFling(vertical ? handleTop : handleLeft + mButtonsWidth, velocity, false);
                     }
                 }
                 break;
@@ -706,9 +706,9 @@ public class MultiDirectionSlidingDrawerWithButtons extends ViewGroup {
             } else if (position == COLLAPSED_FULL_CLOSED) {
                 mButtons.setVisibility(VISIBLE);
                 if (mInvert)
-                    handle.offsetLeftAndRight(mTopOffset - handle.getLeft());
+                    handle.offsetLeftAndRight(mTopOffset - handle.getLeft()+mButtonsWidth);
                 else
-                    handle.offsetLeftAndRight(mBottomOffset + getRight() - getLeft() - mHandleWidth - handle.getLeft());
+                    handle.offsetLeftAndRight(mBottomOffset + getRight() - getLeft() - mHandleWidth - mButtonsWidth - handle.getLeft());
                 invalidate();
             } else {
                 final int left = handle.getLeft();
