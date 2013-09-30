@@ -1,4 +1,4 @@
-SlidingDrawerWithButtons
+SlidingDrawerWithButtons(<a href="https://play.google.com/store/apps/details?id=v.hudnitsky.demo.slider">Google Play Demo</a>)
 ========================
 SlidingDrawerWithButtons is an Open Source Android project that allows developers to easily create applications with sliding drawers with some context if you close drawer. Feel free to use it all you want in your Android apps provided that you cite this project and include the license in your app.
 
@@ -89,7 +89,7 @@ NOTE : you cannot use both behindOffset and behindWidth. You will get an excepti
         <enum name="bottomToTop" value="1" />
         <enum name="leftToRight" value="2" />
         <enum name="topToBottom" value="3" />
-    </attr>
+  </attr>
 
     <declare-styleable name="MultiDirectionSlidingDrawerWithButtons">
         <attr name="handle" format="reference" />
@@ -100,6 +100,7 @@ NOTE : you cannot use both behindOffset and behindWidth. You will get an excepti
         <attr name="topOffset" format="dimension"  />
         <attr name="allowSingleTap" format="boolean" />
         <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
 handle - a reference to the layout that you want to use as the above view of the SlidingDrawerWithButtons
 content - a reference to the layout that you want to use as the behind view of the SlidingDrawerWithButtons
 buttons - a reference to the layout that you want to use as other elements view of the SlidingDrawerWithButtons
