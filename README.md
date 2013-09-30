@@ -4,7 +4,7 @@ SlidingDrawerWithButtons is an Open Source Android project that allows developer
 
 If you are using SlidingDrawerWithButtons in your app and would like to be listed here, please let me know via Twitter!
 
-Also, you can follow my on Twitter : https://twitter.com/VKhudnitsky
+Also, you can follow my on Twitter : https://twitter.com/VKhudnitsky.
 
 XML Usage
 
